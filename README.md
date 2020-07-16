@@ -56,7 +56,8 @@ and unzip it in the weights folder.
 ### How to acheive better results :grey_question:
 - Make sure the data covers all the test cases you want your script to test on i.e, if you are wearing spectacles in all the images then most probably it will have a hard 
 time recognising you without it. See (:nerd_face: -> :man:)
-- Try to make sure your face is visible clear and big; else when resizing the face, noise is induced into the model which takes a toll on your predicted identity
+- Try to make sure your face is visible clear and big so as to facilitate a nice and tight crop of your face; else when resizing, noise is induced into the model 
+which takes a toll on your predicted identity
 
 **Please feel free to PR and let me know if there are any errors :relaxed:**
 ## Resources:
