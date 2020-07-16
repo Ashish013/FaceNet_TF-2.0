@@ -37,4 +37,11 @@ Flags | Description
 Colab 
 - If cloned to local machine make sure **along with TF 2.0** all other dependencies in requirements.txt are installed.
 - To train place the images structured into class name folders in to the data folder
+- Next either pass True to '-dw' flag or manually download the pretrained weights from [here](https://drive.google.com/uc?export=download&confirm=tOfl&id=1NYd6cQlewoQiFH71BHeOy2eTsZEvGzLg) and place it in the weights folder
 - Next change the working directory to current repo directory and run main.py with appropriate flags as in the table above
+
+### Do I have to train it every time :question:
+- Not at all once trained the script creates trained weights in weights folder; a txt, npy file in database folder. Make sure to make them available to script by not 
+changing the file name or loaction. It is like a save feature of the model.
+
+### 
