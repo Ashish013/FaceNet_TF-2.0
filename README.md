@@ -17,7 +17,7 @@ is achieved between embeddings of each identy.
 ### Architecture of the model:
 ![model_architecture](http://bamos.github.io/data/2016-01-19/optimization-after.png)
 
-**Image credits: [Brandon Amos](http://bamos.github.io/2016/01/19/openface-0.2.0/)**
+#### Image credits: [Brandon Amos](http://bamos.github.io/2016/01/19/openface-0.2.0/)
 
 ### Flags:
 
@@ -55,7 +55,7 @@ and unzip it in the weights folder.
 
 ### How to acheive better results :grey_question:
 - Make sure the data covers all the test cases you want your script to test on i.e, if you are wearing spectacles in all the images then most probably it will have a hard 
-time recognising you without it :nerd_face:
+time recognising you without it. See (:nerd_face: -> :man:)
 - Try to make sure your face is visible clear and big; else when resizing the face, noise is induced into the model which takes a toll on your predicted identity
 
 ## Resources:
