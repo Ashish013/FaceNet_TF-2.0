@@ -36,12 +36,15 @@ Flags | Description
 
 
 ### How to run it :question:
-- First clone the repo to local machine; else [here](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing) is the link to run it on Google 
-Colab 
+- First clone the repo to your local machine; else [here](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing) is the link to run it on Google Colab 
 - Once cloned to local machine make sure that **along with TF 2.0** all other dependencies in requirements.txt are installed.
-- To train place the images structured into class names in the data folder
+- To train place the images structured into class names in the data folder (Around 15-20 images per identity hits the sweet spot)
 - Next either pass True to '-dw' flag or manually download the pretrained weights from [here](https://drive.google.com/uc?export=download&confirm=tOfl&id=1NYd6cQlewoQiFH71BHeOy2eTsZEvGzLg) and place it in the weights folder
-- Next change the working directory to current repo directory and run main.py with appropriate flags as in the table above
+- Next change the working directory to current repository directory and run main.py with appropriate flags as in the table above
+- And next based on the input to '-wc' flag the script toggles to evaluate mode. 
+- If the '-wc' flag is set to **True** then model evaluates the model on frames from webcam's live feed.
+- If set to **False** then the model evaluates all the images in the examples folder one by one as shown in the gif above.
+- Oh and almost forgot hit **Esc** to quit the live feed in evaluate mode :sweat_smile:
 
 ### Do I have to train it every time :grey_question:
 - Not at all once trained the script creates trained weights in weights folder; a txt, npy file in database folder. Make sure to make they are available to script by not 
