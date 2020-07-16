@@ -46,21 +46,28 @@ Flags | Description
 - If set to **False** then the model evaluates all the images in the examples folder one by one as shown in the gif above.
 - Oh and almost forgot hit **Esc** to quit the live feed in evaluate mode :sweat_smile:
 
+
+### What are the "pretrained weights" you keep refering to :grey_question:
+- These pretrained weights are not any imagenet weights rather are weights obtained by training on personal images, a subset of celebrity images from a [kaggle dataset](https://www.kaggle.com/havingfun/100-bollywood-celebrity-faces?) for around a 1000 epochs with initial learning rate 5e+5
+
+
 ### Do I have to train it every time :grey_question:
 - Not at all once trained the script creates trained weights in weights folder; a txt, npy file in database folder. Make sure to make they are available to script by not 
 changing the file names or directories.
 - Let me rephrase it : If the script is like a game and you move or change the saved files; you start from Level 1 :grimacing::sweat_smile:
+
 
 ### Can I toggle to evaluate mode without training :question:
 - Absolutely :punch: but remember here your trading accuracy for resources; as pretrained weights will be used for inference/evaluation.
 - To do so just place the images in data and make sure '-dw' flag is set to True or manually download pre trained weights 
 and unzip it in the weights folder.
 
-### How to acheive better results :grey_question:
+
+### How to acheive better results :question:
 - Make sure the data covers all the test cases you want your script to test on i.e, if you are wearing spectacles in all the images then most probably it will have a hard 
 time recognising you without it. See (:nerd_face: -> :man:)
 - Try to make sure your face is visible clear and big so as to facilitate a nice and tight crop of your face; else when resizing, noise is induced into the model 
-which takes a toll on your predicted identity
+which takes a toll on the predicted identity
 
 **Please feel free to PR and let me know if there are any errors :relaxed:**
 ## Resources:
