@@ -58,6 +58,7 @@ and unzip it in the weights folder.
 time recognising you without it. See (:nerd_face: -> :man:)
 - Try to make sure your face is visible clear and big; else when resizing the face, noise is induced into the model which takes a toll on your predicted identity
 
+**Please feel free to PR and let me know if there are any errors :relaxed:**
 ## Resources:
 
 [Colab Link](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing)
