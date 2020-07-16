@@ -48,7 +48,7 @@ Flags | Description
 
 
 ### What are the "pretrained weights" you keep refering to :grey_question:
-- These pretrained weights are not any imagenet weights rather are weights obtained by training on personal images, a subset of celebrity images from this [kaggle dataset](https://www.kaggle.com/havingfun/100-bollywood-celebrity-faces?) for around a 1000 epochs with initial learning rate 5e+5
+- These pretrained weights are not of any imagenet weights rather are weights obtained by training on personal images, a subset of celebrity images from this [kaggle dataset](https://www.kaggle.com/havingfun/100-bollywood-celebrity-faces?) for around 1000 epochs with an initial learning rate 5e+5
 
 
 ### Do I have to train it every time :question:
