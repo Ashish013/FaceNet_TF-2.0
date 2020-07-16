@@ -2,7 +2,6 @@
 FaceNet_TF-2.0 is a naive implementation of [Face Net paper - 2015](https://arxiv.org/abs/1503.03832) by Florian Schroff, Dmitry Kalenichenko, James Philbin in Tensorflow 2.0. 
 This implemenation opts online mode of semi - hard triplet mining over the all possible triplets approach which tends to learn better face embeddings.
 
-
 ![Demo working](/assets/Final-cut.gif)
 
 ### How does it work ?
@@ -15,6 +14,10 @@ space.
 is achieved between embeddings of each identy. 
 - When a new image is evaluated on the model the identity is assigned to the closest cluster provided it lies in the margin.
 
+### Architecture of the model:
+![model_architecture](http://bamos.github.io/data/2016-01-19/optimization-after.png)
+
+**Image credits: [Brandon Amos](http://bamos.github.io/2016/01/19/openface-0.2.0/)**
 
 ### Flags:
 
@@ -45,5 +48,22 @@ Colab
 changing the file name or loaction. It is like a save feature of the model.
 
 ### Can I toggle to evaluate mode without training ?
-- Absolutely but rember your trading accuracy here. To do so just place the images in data and make sure -dw flag is set or manually download pre trained weights and unzip in the weights folder.
+- Absolutely but rember your trading accuracy here. To do so just place the images in data and make sure '-dw' flag is set to True or manually download pre trained weights 
+and unzip it in the weights folder.
 
+### How to acheive better results ?
+- Make sure the data covers all the test cases you want your script to test on i.e, if you are wearing spectacles in all the images then most probably it will have a hard 
+time recognising you without it
+- Try to make sure your face is visible clear and big; else when resizing the face, noise is induced into the model which takes a toll on your predicted identity
+
+## Resources:
+
+[Colab Link](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing)
+
+[Pre Trained Weights](https://drive.google.com/uc?export=download&confirm=tOfl&id=1NYd6cQlewoQiFH71BHeOy2eTsZEvGzLg)
+
+## References:
+
+[Triplet Loss and Online Triplet Mining in TensorFlow](https://omoindrot.github.io/triplet-loss)
+
+[OpenFace 0.2.0: Higher accuracy and halved execution time](http://bamos.github.io/2016/01/19/openface-0.2.0/)
