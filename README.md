@@ -51,13 +51,13 @@ Flags | Description
 - These pretrained weights are not any imagenet weights rather are weights obtained by training on personal images, a subset of celebrity images from a [kaggle dataset](https://www.kaggle.com/havingfun/100-bollywood-celebrity-faces?) for around a 1000 epochs with initial learning rate 5e+5
 
 
-### Do I have to train it every time :grey_question:
+### Do I have to train it every time :question:
 - Not at all once trained the script creates trained weights in weights folder; a txt, npy file in database folder. Make sure to make they are available to script by not 
 changing the file names or directories.
 - Let me rephrase it : If the script is like a game and you move or change the saved files; you start from Level 1 :grimacing::sweat_smile:
 
 
-### Can I toggle to evaluate mode without training :question:
+### Can I toggle to evaluate mode without training :grey_question:
 - Absolutely :punch: but remember here your trading accuracy for resources; as pretrained weights will be used for inference/evaluation.
 - To do so just place the images in data and make sure '-dw' flag is set to True or manually download pre trained weights 
 and unzip it in the weights folder.
