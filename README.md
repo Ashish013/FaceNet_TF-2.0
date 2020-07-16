@@ -2,6 +2,7 @@
 FaceNet_TF-2.0 is a naive implementation of [Face Net paper - 2015](https://arxiv.org/abs/1503.03832) by Florian Schroff, Dmitry Kalenichenko, James Philbin in Tensorflow 2.0. 
 This implemenation opts online mode of semi - hard triplet mining over the all possible triplets approach which tends to learn better face embeddings.
 
+
 ![Demo working](/assets/Final.gif)
 
 ### How does it work ?
@@ -31,5 +32,9 @@ Flags | Description
 '-chde', '--check_detect' | Boolean input to ensure all imgs in data are detectable
 
 
-### How to run it ??
-[Colab link](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing)
+### How to run it ?
+- First clone the repo to local machine; else [here](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing) is the link to run it on Google 
+Colab 
+- If cloned to local machine make sure **along with TF 2.0** all other dependencies in requirements.txt are installed.
+- To train place the images structured into class name folders in to the data folder
+- Next change the working directory to current repo directory and run main.py with appropriate flags as in the table above
