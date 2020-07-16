@@ -48,7 +48,7 @@ Flags | Description
 
 
 ### What are the "pretrained weights" you keep refering to :grey_question:
-- These pretrained weights are not any imagenet weights rather are weights obtained by training on personal images, a subset of celebrity images from a [kaggle dataset](https://www.kaggle.com/havingfun/100-bollywood-celebrity-faces?) for around a 1000 epochs with initial learning rate 5e+5
+- These pretrained weights are not any imagenet weights rather are weights obtained by training on personal images, a subset of celebrity images from this [kaggle dataset](https://www.kaggle.com/havingfun/100-bollywood-celebrity-faces?) for around a 1000 epochs with initial learning rate 5e+5
 
 
 ### Do I have to train it every time :question:
@@ -58,7 +58,7 @@ changing the file names or directories.
 
 
 ### Can I toggle to evaluate mode without training :grey_question:
-- Absolutely :punch: but remember here your trading accuracy for resources; as pretrained weights will be used for inference/evaluation.
+- Absolutely :punch: but remember, here your trading accuracy for resources; as pretrained weights will be used for inference/evaluation.
 - To do so just place the images in data and make sure '-dw' flag is set to True or manually download pre trained weights 
 and unzip it in the weights folder.
 
