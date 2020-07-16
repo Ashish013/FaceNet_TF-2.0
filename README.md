@@ -13,4 +13,4 @@ is achieved between embeddings of each identy.
 - When a new image is evaluated on the model the identity is assigned to the closest cluster provided it lies in the margin.
 
 ### How to run it ??
-[Google Colab](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing)
+[Colab link](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing)
