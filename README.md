@@ -44,4 +44,6 @@ Colab
 - Not at all once trained the script creates trained weights in weights folder; a txt, npy file in database folder. Make sure to make them available to script by not 
 changing the file name or loaction. It is like a save feature of the model.
 
-### 
+### Can I toggle to evaluate mode without training ?
+- Absolutely but rember your trading accuracy here. To do so just place the images in data and make sure -dw flag is set or manually download pre trained weights and unzip in the weights folder.
+
