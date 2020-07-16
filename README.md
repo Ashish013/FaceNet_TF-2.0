@@ -64,6 +64,8 @@ time recognising you without it
 
 ## References:
 
+[Face Net paper](https://arxiv.org/abs/1503.03832)
+
 [Triplet Loss and Online Triplet Mining in TensorFlow](https://omoindrot.github.io/triplet-loss)
 
 [OpenFace 0.2.0: Higher accuracy and halved execution time](http://bamos.github.io/2016/01/19/openface-0.2.0/)
