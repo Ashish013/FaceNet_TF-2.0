@@ -35,25 +35,27 @@ Flags | Description
 '-chde', '--check_detect' | Boolean input to ensure all imgs in data are detectable
 
 
-### How to run it ?
+### How to run it :question:
 - First clone the repo to local machine; else [here](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing) is the link to run it on Google 
 Colab 
-- If cloned to local machine make sure **along with TF 2.0** all other dependencies in requirements.txt are installed.
-- To train place the images structured into class name folders in to the data folder
+- Once cloned to local machine make sure that **along with TF 2.0** all other dependencies in requirements.txt are installed.
+- To train place the images structured into class names in the data folder
 - Next either pass True to '-dw' flag or manually download the pretrained weights from [here](https://drive.google.com/uc?export=download&confirm=tOfl&id=1NYd6cQlewoQiFH71BHeOy2eTsZEvGzLg) and place it in the weights folder
 - Next change the working directory to current repo directory and run main.py with appropriate flags as in the table above
 
-### Do I have to train it every time :question:
-- Not at all once trained the script creates trained weights in weights folder; a txt, npy file in database folder. Make sure to make them available to script by not 
-changing the file name or loaction. It is like a save feature of the model.
+### Do I have to train it every time :grey_question:
+- Not at all once trained the script creates trained weights in weights folder; a txt, npy file in database folder. Make sure to make they are available to script by not 
+changing the file names or directories.
+- Let me rephrase it : If the script is like a game and you move or change the saved files; you start from Level 1 :grimacing::sweat_smile:
 
-### Can I toggle to evaluate mode without training ?
-- Absolutely but rember your trading accuracy here. To do so just place the images in data and make sure '-dw' flag is set to True or manually download pre trained weights 
+### Can I toggle to evaluate mode without training :question:
+- Absolutely :punch: but rember your trading accuracy here as pretrained weights will be used for inference/evaluation.
+- To do so just place the images in data and make sure '-dw' flag is set to True or manually download pre trained weights 
 and unzip it in the weights folder.
 
-### How to acheive better results ?
+### How to acheive better results :grey_question:
 - Make sure the data covers all the test cases you want your script to test on i.e, if you are wearing spectacles in all the images then most probably it will have a hard 
-time recognising you without it
+time recognising you without it :nerd_face:
 - Try to make sure your face is visible clear and big; else when resizing the face, noise is induced into the model which takes a toll on your predicted identity
 
 ## Resources:
