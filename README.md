@@ -3,7 +3,7 @@ FaceNet_TF-2.0 is a naive implementation of [Face Net paper - 2015](https://arxi
 This implemenation opts online mode of semi - hard triplet mining over the all possible triplets approach which tends to learn better face embeddings.
 
 
-![Demo working](/assets/Final_cut.gif)
+![Demo working](/assets/Final-cut .gif)
 
 ### How does it work ?
 
