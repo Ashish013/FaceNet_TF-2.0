@@ -49,7 +49,7 @@ changing the file names or directories.
 - Let me rephrase it : If the script is like a game and you move or change the saved files; you start from Level 1 :grimacing::sweat_smile:
 
 ### Can I toggle to evaluate mode without training :question:
-- Absolutely :punch: but remember your trading accuracy here for resources as pretrained weights will be used for inference/evaluation.
+- Absolutely :punch: but remember here your trading accuracy for resources; as pretrained weights will be used for inference/evaluation.
 - To do so just place the images in data and make sure '-dw' flag is set to True or manually download pre trained weights 
 and unzip it in the weights folder.
 
