@@ -9,7 +9,7 @@ This implemenation opts online mode of semi - hard triplet mining over the other
 The rough idea of the workflow can be summarized as:
 
 - At first the faces are extracted from the training data using dlib module and then a ResNet50 model is used to project these extracted faces onto a unit sphere in 128 dimensional euclidean space. 
-- Next a triplet loss which mines for semi hard triplets is used to tweak the weights of the backbone ResNet50. The training goes on unitll a minimum intercluster distance 
+- Next a triplet loss which mines for semi hard triplets is used to tweak the weights of the backbone ResNet50. The training goes on untill a minimum intercluster distance 
 is achieved between embeddings of each identy. 
 - When a new image is evaluated on the model the identity is assigned to the closest cluster provided it lies in the margin.
 
