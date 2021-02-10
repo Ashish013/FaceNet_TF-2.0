@@ -73,7 +73,7 @@ which takes a toll on the predicted identity
 - [ ] Train on more data.
 - [ ] Interface a GUI to the config file.
 
-**Please feel free to PR and let me know if there are any errors :relaxed:**
+**Please feel free to PR and let me know if there are any errors !**
 ## Resources:
 
 [Colab Link](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing)
