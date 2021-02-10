@@ -68,6 +68,11 @@ time recognising you without it. See (:nerd_face: -> :man:)
 - Try to make sure your face is visible clear and big so as to facilitate a nice and tight crop of your face; else when resizing, noise is induced into the model 
 which takes a toll on the predicted identity
 
+## Do list:
+- [ ] Add config.yml file to access the training parameters.
+- [ ] Train on more data.
+- [ ] Interface a GUI to the config file.
+
 **Please feel free to PR and let me know if there are any errors :relaxed:**
 ## Resources:
 
