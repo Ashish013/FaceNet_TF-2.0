@@ -35,7 +35,6 @@ if __name__ == "__main__":
 	img_size = 200
 	margin = input_dict['margin']
 
-
 	# Initalizes the embedding model
 	emb_model = emb_init(img_size,emb_size)
 
@@ -43,7 +42,6 @@ if __name__ == "__main__":
 	try:
 		emb_model.load_weights(input_dict['weights_path'])
 	except:
-
 		if 'true' in input_dict['download_weights'].lower():
 
 			from zipfile import ZipFile
@@ -76,8 +74,7 @@ if __name__ == "__main__":
 
 		else:
 			sys.exit('check_detect is not a boolean !')
-
-
+			
 
 	if 'true' in (input_dict['train']).lower():
 
@@ -96,7 +93,6 @@ if __name__ == "__main__":
 		except:
 			batch_size = (imgs_per_folder*len(paths))
 			print("Batch size is taken as length of all images by default as batch_size argument was not provided......\n")
-
 
 		#Loads the data from disk into an array
 		data,y_names,imgs_per_folder = make_data_array(directory,paths,img_size,imgs_per_folder,total_imgs,input_dict['check_detect'],input_dict['detector'])
@@ -138,7 +134,6 @@ if __name__ == "__main__":
 		faces = store_references(paths,imgs_per_folder,emb_size,emb_model,data,face_names)
 
 	else:
-
 		try:
 			# Loading embedding reference of faces
 			faces = np.load('./database/faces_emb_reference.npy')
@@ -154,7 +149,7 @@ if __name__ == "__main__":
 				faces,face_names = construct_database(emb_size,img_size,emb_model,input_dict["detector"],input_dict["check_detect"])
 			else:
 				sys.exit("No Images in data to construct database\n")
-
+				
 
 	if 'true' in input_dict['web_cam'].lower():
 		evaluate_on_webcam(img_size,face_names,faces,emb_model,margin)
@@ -164,3 +159,5 @@ if __name__ == "__main__":
 	else:
 		sys.exit("web_cam argument is not a boolean !")
 
+
+		
