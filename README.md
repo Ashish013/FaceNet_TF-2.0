@@ -36,11 +36,10 @@ Flags | Description
 
 ### How to run it :question:
 - First clone the repo to your local machine; else [here](https://colab.research.google.com/drive/15lbTBNEZDsOdbIarumT5QQDdMWtx_96n?usp=sharing) is the link to run it on Google Colab 
-- Once cloned to local machine make sure that **along with TF 2.0** all other dependencies in requirements.txt are installed.
+- Once cloned to local machine, install the packages as stated in requirements text file.
 - To train place the images structured into class names in the data folder (Around 15-20 images per identity hits the sweet spot)
-- Next either pass True to '-dw' flag or manually download the pretrained weights from [here](https://drive.google.com/uc?export=download&confirm=tOfl&id=1NYd6cQlewoQiFH71BHeOy2eTsZEvGzLg) and place it in the weights folder
-- Next change the working directory to current repository directory and run main.py with appropriate flags as in the table above
-- And next based on the input to '-wc' flag the script toggles to evaluate mode. 
+- Next, either set the '-dw' flag to 'true' or manually download the pretrained weights from [here](https://drive.google.com/uc?export=download&confirm=tOfl&id=1NYd6cQlewoQiFH71BHeOy2eTsZEvGzLg) and save them in the weights folder.
+- Finally, move your working directory to the current repository directory and run main.py with the appropriate flags as listed in the table above.
 - If the '-wc' flag is set to **True** then model evaluates the model on frames from webcam's live feed.
 - If set to **False** then the model evaluates all the images in the examples folder one by one as shown in the gif above.
 - Oh and almost forgot hit **Esc** to quit the live feed in evaluate mode :sweat_smile:
@@ -69,9 +68,9 @@ time recognising you without it. See (:nerd_face: -> :man:)
 which takes a toll on the predicted identity
 
 ## Do list:
-- [ ] Add config.yml file to access the training parameters.
 - [ ] Train on more data.
-- [ ] Interface a GUI to the config file.
+- [ ] Add config.yml file to access the training parameters.
+- [ ] Develop a GUI to easily interface the model and config file.
 
 **Please feel free to PR and let me know if there are any errors !**
 ## Resources:
