@@ -1,6 +1,6 @@
 gdown==3.11.1
 matplotlib==3.2.2
-numpy==1.19.0
+numpy==1.22.0
 dlib==19.20.0
 opencv-contrib-python==4.2.0.34
 Pillow==7.1.2
