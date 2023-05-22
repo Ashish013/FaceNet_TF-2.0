@@ -4,7 +4,7 @@ numpy==1.19.0
 dlib==19.20.0
 opencv-contrib-python==4.2.0.34
 Pillow==7.1.2
-requests==2.24.0
+requests==2.31.0
 scikit-learn==0.23.1
 scipy==1.4.1
 zipfile36==0.1.3
